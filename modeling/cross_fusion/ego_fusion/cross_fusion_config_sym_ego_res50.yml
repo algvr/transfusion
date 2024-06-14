@@ -1,0 +1,91 @@
+model: cross_f
+type: cross_transformer
+share_encoders: False
+narr_out_mode: tokens  # one of "tokens" or "embedding"
+heatmap_upscale: 1.5
+class_upscale: 2
+extra: False
+patch_h: 
+  - 4
+  - 4
+  - 2
+  - 1
+patch_w: 
+  - 4
+  - 4
+  - 2
+  - 1
+backproj_dropout: 0.1
+# can be swish, relu, tanh, null
+backproj_activ_f: null
+patch_norm: 
+    visual: null
+    language: null
+# pos_embedding: learned
+pos_embedding: sin1d
+# one of sum or direct or False
+forward_language_f: False
+# vis_mask_type: local_4
+vis_mask_type: global
+
+args:
+  patch_dropout: 0.1
+  num_layers: [4,4,4,4]
+  num_heads: 4
+  fforward_multiplier: 2
+  token_dropout: 0.15
+  # back_to_img_fn: token
+  back_to_img_fn: regroup
+  # activ_f: relu
+  activ_f: gelu
+  final_norm: ln
+  # local_attention: False
+
+flow_projection: 
+  type: conv3d
+  # type: avgpool
+  conv3d_init: null
+  # conv3d_init: central
+  # conv3d_init: uniform
+  k_size: 
+   - [2,5,5]
+   - [2,5,5]
+   - [2,3,3]
+   - [2,3,3]
+  stride: 
+   - [1,4,4]
+   - [1,4,4]
+   - [1,2,2]
+   - [1,1,1]
+  padding: 
+   - [0, 2, 2]
+   - [0, 2, 2]
+   - [0, 1, 1]
+   - [1, 1, 1]
+
+# flow_input_size: [320, 320]
+temporal_embedding: False
+flow_attention: early
+flow_pos_embedding: learned
+
+# 0 subsamples by 2, 1 by 4, 4 by 8, 7 by 16, 13 by 32
+flow_return_layers:
+  - '5'
+  - '7'
+  - '12'
+  - '15'
+
+flow_args:
+  num_layers: 2
+  fforward_multiplier: 2
+  token_dropout: 0.1
+  # type: space_time
+  # type: cross_transformer
+
+lm_args:
+  pooling: 
+    type: mean
+    ln: True
+    repr_size: 0
+  multi: False
+  use_lm_f: True

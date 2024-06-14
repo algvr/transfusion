@@ -1,0 +1,5 @@
+dataset: "epic"
+actors: "all"
+soft_matches_file: "${CODE}/data_preprocessing/configs/soft_matches.json"
+parsing_version: 1
+epic_video: True

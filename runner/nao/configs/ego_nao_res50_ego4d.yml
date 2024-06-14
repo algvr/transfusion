@@ -1,0 +1,165 @@
+experiment: egonao
+debug: False
+force_wandb_logging: False
+no_workers: 6
+no_threads: 12
+
+model: "${CODE}/runner/nao/configs/ego_vis_det_ego4d.yml"
+pretrained: ${CODE}/checkpoints/translated_ego4d.pth
+finetune: True
+
+split: 
+  subset: 0
+  version: 42
+  type: group_stratified
+  strat_col: null
+  egtea_test: False
+  all_samples_as_train: False
+  all_samples_as_val: False
+  
+aug:
+  resize_spec:  # given as h, w
+  - [480, 544, 640, 704, 768, 800]
+  - [596, 640, 758, 896, 1024, 1280]
+  channel_order: BGR
+  crop_spec:
+    - .9
+    - .9
+  brightness: 0.15
+  contrast: 0.1
+  saturation: 0.
+  hue: 0.05
+  flip: False
+ 
+dataset: 
+  name: ego4djpg
+  subsample: null
+  args:
+    offset_s: .4
+    label_merging: "${CODE}/data_preprocessing/configs/label_merging.json"
+    label_cutoff: 
+      verb: 0
+      noun: 0
+      drop: False
+      dampen: 0.2
+    frame_diff: null
+    nao_version: 1
+    coarse: False
+    take_double: False
+    action_rec: False
+    use_external_label_mapping: True 
+    narr_structure: "{external_0}{external_1}"
+    narr_external_paths:
+      - ${CODE}/context/object_lang_ego4d.json
+      - ${CODE}/context/action_lang_ego4d.json
+    narr_context_length: -1
+
+run:
+  normalization: ego4d_baseline
+
+  narration_embeds: 
+    use: True
+    slowfast_f: False
+    w_leak: False
+    args: 
+      strategy: current
+      pooling: max 
+      empty_prompt: Null
+      end_prompt: Null
+      final_concat: Null
+      lang_dropout: 0.1
+      size: 384
+      empty_prompt: Null
+      out_mlp: 712
+      out_tanh: False
+      out_dropout: 0.15
+      normalize: True
+      train_ep: 0
+      model_v: "all-MiniLM-L12-v2"
+
+  narr_fusion: 
+    config: ${CODE}/modeling/cross_fusion/ego_fusion/cross_fusion_config_sym_ego_res50.yml  # same for v1 and v2
+    fpn_features: 
+      - 0
+      - 1
+      - 2
+      - 3
+    replace_fpn_features: True
+
+  hand_args:
+    use: False
+    path: "${CODE}/datasets/Ego4d/v2/frankmocap_hand_cache.dat"
+    step: 5
+    num_steps: 5
+    hand_feat_dim: 63
+    emb_steps_hand: 100
+    emb_steps_object: 100
+    num_heads: 4
+    num_layers: 4
+  
+  flow_args:
+    use: False
+    num_frames: 5
+    stride: 1
+    block: 1
+    norm: True
+    concat_magnitude: False
+    model: "${CODE}/runner/nao/configs/flow.yml"
+    clip: 0
+    as_jpg: True
+    dual_stream: 
+      use: False
+  
+  seed: 42
+  epochs: 250
+  val_every: 1.0
+  save_every: 1.0
+  run_test: False
+  precision: 16
+  accumulate_grad_batches: 2
+  train_bs: 18
+  val_bs: 36
+  ckpt: null
+  grad_clip: 1
+  devices: 
+    devices:
+      - 0
+    acc: gpu
+  
+  class_dropout: 0.0
+  ttc_dropout: 0.5
+  verb_bg: True
+  ttc_bg: False
+  ttc_bg_val: False
+
+  bg_weight: 1
+  all_class_w: False
+  criterion: 
+    bbox: 1
+    obj_prop: 1
+    noun: 1
+    verb: 1
+    ttc: 0
+    lm: 0
+    agg: mean
+    ttc_beta: 2
+
+  tune_lr: False
+  optimizer:
+    name: radam
+    lr: 1.e-4
+    momentum: 0.9
+    weight_decay: 2.e-4
+    sep_encoders: 
+      div_rate: 5
+      ttc_rate: 4
+
+  scheduler: 
+    use: True
+    name: warmup
+    name: multistep
+    after_warmup : exponential
+    milestones: [6, 8]
+    gamma: 0.25
+    total_epoch: 6
+    multiplier: 3

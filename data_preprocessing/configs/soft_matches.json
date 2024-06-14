@@ -1,0 +1,2527 @@
+{
+  "epic": {
+    "actions": {
+      "obj_only": [
+        "remove",
+        "move",
+        "fill",
+        "press on",
+        "drink",
+        "lift",
+        "put",
+        "take",
+        "close",
+        "insert",
+        "fill",
+        "scrape",
+        "pat",
+        "form",
+        "sprinkle",
+        "add",
+        "pull",
+        "open",
+        "eat",
+        "transition",
+        "look"
+      ],
+      "take_closest_to_hand": [
+        "move",
+        "close",
+        "open",
+        "stir",
+        "mix",
+        "cut",
+        "peel",
+        "put",
+        "pour",
+        "lift",
+        "press_on",
+        "shake",
+        "flip",
+        "taste",
+        "unscrew"
+      ],
+      "take_all_instances": [
+        "take",
+        ""
+      ],
+      "shake": [
+        "obj",
+        "pot/pan",
+        "frying pan"
+      ],
+      "cook": [
+        "obj",
+        "frying pan",
+        "pot/pan"
+      ],
+      "turn off": [
+        "obj",
+        "power outlet"
+      ],
+      "apply": [
+        "obj",
+        "pot/pan",
+        "bowl",
+        "bread"
+      ],
+      "scoop": [
+        "obj",
+        "pizza",
+        "bowl",
+        "frying pan"
+      ],
+      "pour": [
+        "obj",
+        "bowl",
+        "frying pan",
+        "pot/pan"
+      ],
+      "wash": [
+        "obj",
+        "sink",
+        "faucet",
+        "tap",
+        "plumbing fixture"
+      ],
+      "turn": [
+        "obj",
+        "frying pan"
+      ],
+      "flip": [
+        "obj",
+        "frying pan",
+        "pot/pan",
+        "bowl"
+      ],
+      "roll": [
+        "obj",
+        "frying pan",
+        "cutting board"
+      ],
+      "drain": [
+        "obj",
+        "sink",
+        "canned",
+        "bowl"
+      ],
+      "stir": [
+        "obj",
+        "pot/pan",
+        "frying pan",
+        "bowl",
+        "cup"
+      ],
+      "cut": [
+        "obj",
+        "cutting board",
+        "_tableware",
+        "plate",
+        "knife",
+        "bowl",
+        "fork"
+      ],
+      "peel": [
+        "obj",
+        "scissors",
+        "knife"
+      ],
+      "taste": [
+        "obj",
+        "pot/pan",
+        "bowl"
+      ],
+      "check": [
+        "obj",
+        "pot/pan",
+        "bowl"
+      ],
+      "unscrew": [
+        "bottle",
+        "canned"
+      ]
+    },
+    "no_matches": [
+      "bottle opener",
+      "coconut",
+      "raisin",
+      "pea",
+      "dust pan",
+      "cocktail",
+      "battery",
+      "crisp",
+      "washing powder",
+      "roll",
+      "caper",
+      "hoover",
+      "funnel",
+      "tv",
+      "backpack",
+      "wall",
+      "stand",
+      "wall",
+      "straw",
+      "salt cellar",
+      "hand guard",
+      "pith",
+      "artichoke",
+      "cork",
+      "quorn",
+      "air",
+      "sushi mat",
+      "cumin",
+      "pestle",
+      "sprout",
+      "crab stick",
+      "window",
+      "breadcrumb",
+      "rubber",
+      "heater",
+      "sous vide machine",
+      "watch",
+      "scotch:egg",
+      "cinnamon",
+      "dumpling",
+      "asparagus",
+      "candle",
+      "sryup",
+      "masher",
+      "raspberry",
+      "sheets",
+      "turkey",
+      "vanilla extract",
+      "pen",
+      "airer",
+      "face",
+      "camera",
+      "cd",
+      "computer"
+    ],
+    "kitchen door": {
+      "default": [
+        "door",
+        "door handle"
+      ]
+    },
+    "plum": {
+      "default": [
+        "fruit",
+        "tomato"
+      ]
+    },
+    "power": {
+      "default": [
+        "microwave oven"
+      ]
+    },
+    "soda": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "pineapple": {
+      "default": [
+        "fruit",
+        "lemon"
+      ]
+    },
+    "rosemary": {
+      "default": [
+        "cup",
+        "bottle"
+      ]
+    },
+    "melon": {
+      "default": [
+        "pancake",
+        "fruit"
+      ]
+    },
+    "bar": {
+      "default": [
+        "box"
+      ]
+    },
+    "lemon grass": {
+      "default": [
+        "green vegetables",
+        "vegetable"
+      ]
+    },
+    "strawberry": {
+      "default": [
+        "apple",
+        "fruit"
+      ]
+    },
+    "bean": {
+      "default": [
+        "canned",
+        "bottle",
+        "cup"
+      ]
+    },
+    "gin": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "mint": {
+      "default": [
+        "green vegetables",
+        "broccoli",
+        "vegetable"
+      ]
+    },
+    "cherry": {
+      "default": [
+        "dessert",
+        "cake",
+        "fruit",
+        "bowl"
+      ]
+    },
+    "onion ring": {
+      "default": [
+        "doughnut",
+        "bagel",
+        "dessert"
+      ]
+    },
+    "shrimp": {
+      "default": [
+        "seafood",
+        "shrimp"
+      ]
+    },
+    "basil": {
+      "default": [
+        "houseplant",
+        "flower",
+        "vegetable",
+        "lettuce"
+      ]
+    },
+    "fruit": {
+      "default": [
+        "fruit",
+        "apple",
+        "tomato"
+      ]
+    },
+    "shelf": {
+      "default": [
+        "furniture",
+        "cabinet/shelf"
+      ]
+    },
+    "almond": {
+      "default": [
+        "bottle",
+        "cup"
+      ]
+    },
+    "pear": {
+      "default": [
+        "pear",
+        "apple",
+        "fruit",
+        "potato",
+        "banana"
+      ]
+    },
+    "stalk": {
+      "default": [
+        "green vegetables",
+        "tomato",
+        "broccoli",
+        "vegetable"
+      ]
+    },
+    "pizza cutter": {
+      "default": [
+        "spoon"
+      ]
+    },
+    "paprika": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "beer": {
+      "default": [
+        "canned",
+        "bottle"
+      ]
+    },
+    "beef": {
+      "default": [
+        "steak"
+      ],
+      "take": [
+        "frying pan",
+        "pot/pan"
+      ]
+    },
+    "wine": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "breadstick": {
+      "default": [
+        "chopsticks"
+      ]
+    },
+    "ladder": {
+      "default": [
+        "chair"
+      ]
+    },
+    "label": {
+      "default": [
+        "book",
+        "fruit",
+        "vegetable"
+      ]
+    },
+    "turmeric": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "slicer": {
+      "default": [
+        "mobile phone"
+      ]
+    },
+    "spinach": {
+      "default": [
+        "green vegetables",
+        "salad",
+        "vegetable",
+        "lettuce",
+        "houseplant"
+      ]
+    },
+    "wire": {
+      "default": [
+        "power outlet",
+        "extension cord"
+      ]
+    },
+    "celery": {
+      "default": [
+        "green vegetables",
+        "asparagus",
+        "vegetable"
+      ]
+    },
+    "remote control": {
+      "default": [
+        "rempote",
+        "mobile phone"
+      ]
+    },
+    "whisk": {
+      "default": [
+        "fork"
+      ]
+    },
+    "blackberry": {
+      "default": [
+        "camera",
+        "grape",
+        "mobile phone"
+      ]
+    },
+    "thyme": {
+      "default": [
+        "bottle",
+        "cup"
+      ]
+    },
+    "lady finger": {
+      "default": [
+        "cucumber",
+        "zucchini",
+        "vegetable"
+      ]
+    },
+    "cabbage": {
+      "default": [
+        "red cabbage",
+        "cabbage",
+        "salad",
+        "vegetable"
+      ]
+    },
+    "kiwi": {
+      "default": [
+        "zucchini",
+        "apple",
+        "potato",
+        "vegetable",
+        "fruit"
+      ]
+    },
+    "apple": {
+      "default": [
+        "apple",
+        "fruit",
+        "bar soap"
+      ]
+    },
+    "mango": {
+      "default": [
+        "mango",
+        "apple",
+        "zucchini",
+        "fruit",
+        "vegetable"
+      ]
+    },
+    "drink": {
+      "default": [
+        "bottle",
+        "cup"
+      ]
+    },
+    "kale": {
+      "default": [
+        "cabbage",
+        "salad",
+        "green vegetables",
+        "broccoli",
+        "vegetable"
+      ]
+    },
+    "orange": {
+      "default": [
+        "orange",
+        "grapefruit",
+        "fruit"
+      ],
+      "squeeze": [
+        "pot/pan"
+      ]
+    },
+    "grape": {
+      "default": [
+        "grape",
+        "fruit"
+      ]
+    },
+    "salad spinner": {
+      "default": [
+        "ceiling fan",
+        "mechanical fan"
+      ]
+    },
+    "handle": {
+      "default": [
+        "pan/pot",
+        "frying pan",
+        "bowl",
+        "wok"
+      ]
+    },
+    "apron": {
+      "default": [
+        "towel/napkin"
+      ]
+    },
+    "yeast": {
+      "default": [
+        "cup",
+        "canned",
+        "spoon"
+      ]
+    },
+    "chair": {
+      "default": [
+        "chair",
+        "furniture"
+      ]
+    },
+    "fishcakes": {
+      "default": [
+        "lemon",
+        "sandwich"
+      ]
+    },
+    "knob": {
+      "default": [
+        "oven"
+      ]
+    },
+    "lentil": {
+      "default": [
+        "dessert",
+        "grape"
+      ]
+    },
+    "ice": {
+      "default": []
+    },
+    "chocolate": {
+      "default": [
+        "dessert",
+        "cake"
+      ]
+    },
+    "juice": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "toaster": {
+      "default": [
+        "toaster",
+        "bread"
+      ]
+    },
+    "extractor fan": {
+      "default": []
+    },
+    "whetstone": {
+      "default": [
+        "object--support--pole",
+        "tape measure/ruler"
+      ]
+    },
+    "parsley": {
+      "default": [
+        "green vegetables",
+        "houseplant",
+        "vegetable",
+        "broccoli"
+      ]
+    },
+    "pancake": {
+      "default": [
+        "pancake",
+        "bread",
+        "banana"
+      ]
+    },
+    "phone": {
+      "default": [
+        "mobile phone",
+        "camera"
+      ]
+    },
+    "green beans": {
+      "default": [
+        "houseplant",
+        "green vegetables"
+      ]
+    },
+    "hummus": {
+      "default": []
+    },
+    "cake": {
+      "default": [
+        "cake",
+        "dessert",
+        "pancake",
+        "doughnut",
+        "bread",
+        "pizza"
+      ]
+    },
+    "blueberry": {
+      "default": [
+        "camera",
+        "grape",
+        "mobile phone"
+      ]
+    },
+    "avocado": {
+      "default": [
+        "apple",
+        "fruit",
+        "banana",
+        "vegetable",
+        "potato"
+      ]
+    },
+    "pork": {
+      "default": [
+        "steak",
+        "sausage"
+      ]
+    },
+    "noodle": {
+      "default": [
+        "pasta"
+      ]
+    },
+    "tablet": {
+      "default": [
+        "rempote",
+        "mobile phone"
+      ]
+    },
+    "bacon": {
+      "default": [
+        "sausage",
+        "hot dog",
+        "dessert",
+        "pizza"
+      ]
+    },
+    "slow cooker": {
+      "default": [
+        "pot/pan"
+      ]
+    },
+    "cream": {
+      "default": [
+        "pizza",
+        "canned"
+      ]
+    },
+    "book": {
+      "default": [
+        "book"
+      ]
+    },
+    "coriander": {
+      "default": [
+        "green vegetables",
+        "salad",
+        "vegetable"
+      ]
+    },
+    "lime": {
+      "default": [
+        "lemon",
+        "fruit",
+        "vegetable"
+      ]
+    },
+    "presser": {
+      "default": []
+    },
+    "utensil": {
+      "default": [
+        "spoon",
+        "book"
+      ]
+    },
+    "recipe": {
+      "default": [
+        "book"
+      ]
+    },
+    "holder": {
+      "default": [
+        "object--support--pole"
+      ]
+    },
+    "tuna": {
+      "default": [],
+      "open": [
+        "mango",
+        "canned"
+      ]
+    },
+    "thermometer": {
+      "default": [
+        "object--support--pole"
+      ]
+    },
+    "basket": {
+      "default": [
+        "basket",
+        "mechanical fan"
+      ]
+    },
+    "sandwich": {
+      "default": [
+        "sandwich",
+        "bread",
+        "banana"
+      ]
+    },
+    "plug": {
+      "default": []
+    },
+    "oregano": {
+      "default": [
+        "bottle",
+        "cup"
+      ]
+    },
+    "paste": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "teapot": {
+      "default": [
+        "kettle",
+        "cup"
+      ]
+    },
+    "liquid": {
+      "default": [
+        "cleaning products",
+        "liquid soap",
+        "bowl",
+        "pot/pan"
+      ]
+    },
+    "salami": {
+      "default": [
+        "pizza"
+      ]
+    },
+    "spring onions": {
+      "default": [
+        "asparagus",
+        "green vegetables",
+        "houseplant",
+        "zucchini",
+        "broccoli",
+        "vegetable"
+      ]
+    },
+    "egg shell": {
+      "default": [
+        "grapefruit",
+        "egg"
+      ]
+    },
+    "omelette": {
+      "default": [
+        "pizza",
+        "rice",
+        "pancake"
+      ]
+    },
+    "pak choi": {
+      "default": [
+        "cabbage",
+        "broccoli",
+        "lettuce",
+        "zucchini",
+        "vegetable"
+      ]
+    },
+    "floor": {
+      "default": [],
+      "sweep": [
+        "wine glass",
+        "measuring cup",
+        "bottle",
+        "object--support--pole"
+      ],
+      "move": [
+        "chair"
+      ]
+    },
+    "kitchen": {
+      "default": []
+    },
+    "vinegar": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "oatmeal": {
+      "default": []
+    },
+    "food processor": {
+      "default": [
+        "blender",
+        "food processor",
+        "mechanical fan",
+        "mixer",
+        "kettle",
+        "wine glass",
+        "tableware"
+      ]
+    },
+    "soup": {
+      "default": []
+    },
+    "salmon": {
+      "default": []
+    },
+    "powder": {
+      "default": [
+        "cup",
+        "bottle"
+      ]
+    },
+    "pie": {
+      "default": [
+        "bread",
+        "pancake",
+        "dessert",
+        "cookie"
+      ]
+    },
+    "ginger": {
+      "default": []
+    },
+    "banana": {
+      "default": [
+        "banana",
+        "fruit"
+      ],
+      "throw": [
+        "sandwich"
+      ]
+    },
+    "tongs": {
+      "default": [
+        "tong",
+        "knife"
+      ]
+    },
+    "seed": {
+      "default": [
+        "bottle",
+        "tableware"
+      ]
+    },
+    "clip": {
+      "default": [
+        "scissors"
+      ]
+    },
+    "burger": {
+      "default": [
+        "hot dog",
+        "sausage",
+        "dessert",
+        "bread",
+        "cake"
+      ]
+    },
+    "cap": {
+      "default": [],
+      "close": [
+        "bottle"
+      ]
+    },
+    "tea": {
+      "default": [
+        "book"
+      ]
+    },
+    "washing maschine": {
+      "default": [
+        "washing machine",
+        "toilet",
+        "kitchen appliance",
+        "vehicle"
+      ]
+    },
+    "rolling pin": {
+      "default": []
+    },
+    "foil": {
+      "default": []
+    },
+    "lighter": {
+      "default": [
+        "scissors",
+        "object--support--pole",
+        "drinking straw"
+      ]
+    },
+    "corn": {
+      "default": [
+        "backpack",
+        "bread",
+        "banana",
+        "fruit",
+        "sandwich"
+      ]
+    },
+    "alarm": {
+      "default": [
+        "oven"
+      ]
+    },
+    "curry": {
+      "default": []
+    },
+    "juicer": {
+      "default": [
+        "ceiling fan",
+        "mechanical fan",
+        "drink",
+        "mango"
+      ]
+    },
+    "scale": {
+      "default": [
+        "animal",
+        "laptop"
+      ]
+    },
+    "light": {
+      "default": [
+        "traffic light",
+        "power outlet"
+      ]
+    },
+    "drying rack": {
+      "default": [
+        "basket",
+        "book"
+      ]
+    },
+    "leek": {
+      "default": [
+        "green vegetables",
+        "zucchini",
+        "cucumber",
+        "vegetable"
+      ]
+    },
+    "lettuce": {
+      "default": [
+        "lettuce",
+        "cabbage",
+        "salad",
+        "broccoli",
+        "vegetable"
+      ]
+    },
+    "fish": {
+      "default": [
+        "bread",
+        "animal"
+      ]
+    },
+    "squash": {
+      "default": [
+        "hamimelon",
+        "mango",
+        "carrot",
+        "grapefruit",
+        "bread"
+      ]
+    },
+    "freezer": {
+      "default": [
+        "refrigerator",
+        "oven"
+      ]
+    },
+    "lemon": {
+      "default": [
+        "lemon",
+        "pear",
+        "ball",
+        "potato",
+        "fruit"
+      ]
+    },
+    "biscuit": {
+      "default": [
+        "dessert",
+        "canned",
+        "book"
+      ]
+    },
+    "sugar": {
+      "default": []
+    },
+    "plastic wrap": {
+      "default": []
+    },
+    "wrap": {
+      "default": [
+        "book"
+      ]
+    },
+    "brush": {
+      "default": [
+        "brush",
+        "object--support--pole",
+        "toothbrush"
+      ]
+    },
+    "blender": {
+      "default": [
+        "blender",
+        "food processor",
+        "mechanical fan",
+        "mixer",
+        "kettle"
+      ],
+      "shake": [
+        "bottle"
+      ]
+    },
+    "stock": {
+      "default": [
+        "pizza"
+      ]
+    },
+    "button": {
+      "default": []
+    },
+    "cereal": {
+      "default": [
+        "box",
+        "book"
+      ],
+      "pour": [
+        "cup",
+        "bowl"
+      ]
+    },
+    "vegetable": {
+      "default": [
+        "vegetable",
+        "pizza"
+      ]
+    },
+    "broccoli": {
+      "default": [
+        "broccoli",
+        "vegetable",
+        "cabbage"
+      ]
+    },
+    "ladle": {
+      "default": [
+        "spatula",
+        "spoon",
+        "toothbrush"
+      ]
+    },
+    "grater": {
+      "default": [
+        "mobile phone",
+        "camera"
+      ]
+    },
+    "pizza": {
+      "default": [
+        "pizza"
+      ]
+    },
+    "spice": {
+      "default": [
+        "bottle",
+        "cup"
+      ],
+      "put": [
+        "cabinet/shelf"
+      ]
+    },
+    "potato peeler": {
+      "default": [
+        "knife",
+        "tableware"
+      ]
+    },
+    "yoghurt": {
+      "default": [
+        "cup"
+      ]
+    },
+    "kitchen towel": {
+      "default": [
+        "toilet paper",
+        "towel/napkin",
+        "paper towel"
+      ]
+    },
+    "napkin": {
+      "default": [
+        "tissue",
+        "towel/napkin",
+        "toilet paper"
+      ]
+    },
+    "cover": {
+      "default": []
+    },
+    "microwave": {
+      "default": [
+        "microwave oven",
+        "microwave"
+      ]
+    },
+    "olive": {
+      "default": [
+        "nuts",
+        "dates",
+        "camera",
+        "canned"
+      ]
+    },
+    "sausage": {
+      "default": [
+        "sausage",
+        "hot dog"
+      ]
+    },
+    "mat": {
+      "default": [
+        "towel/napkin"
+      ]
+    },
+    "clothes": {
+      "default": [
+        "washing machine"
+      ]
+    },
+    "chilli": {
+      "default": [
+        "pizza"
+      ]
+    },
+    "chopstick": {
+      "default": [
+        "object--support--pole",
+        "tong",
+        "spoon"
+      ]
+    },
+    "salad": {
+      "default": [
+        "salad",
+        "lettuce",
+        "cabbage",
+        "vegetable"
+      ]
+    },
+    "scissors": {
+      "default": [
+        "scissors"
+      ]
+    },
+    "butter": {
+      "default": [
+        "dessert",
+        "sandwich",
+        "bread",
+        "cheese"
+      ]
+    },
+    "tofu": {
+      "default": [
+        "cheese"
+      ]
+    },
+    "filter": {
+      "default": [],
+      "insert": [
+        "coffeemaker",
+        "toilet"
+      ]
+    },
+    "cucumber": {
+      "default": [
+        "cucumber",
+        "vegetable"
+      ]
+    },
+    "peach": {
+      "default": [
+        "hot dog",
+        "pear",
+        "apple",
+        "fruit"
+      ]
+    },
+    "courgette": {
+      "default": [
+        "zucchini",
+        "cucumber",
+        "vegetable"
+      ]
+    },
+    "flour": {
+      "default": [
+        "carrot",
+        "tableware",
+        "cup"
+      ]
+    },
+    "can": {
+      "default": [
+        "canned",
+        "mobile phone",
+        "camera"
+      ],
+      "close": [
+        "cup"
+      ]
+    },
+    "heat": {
+      "default": [
+        "oven"
+      ],
+      "check": [
+        "pot/pan"
+      ]
+    },
+    "mixture": {
+      "default": [
+        "bowl",
+        "frying pan",
+        "tableware"
+      ]
+    },
+    "dishwasher": {
+      "default": [
+        "laptop",
+        "home appliance",
+        "washing machine",
+        "refrigerator",
+        "oven"
+      ]
+    },
+    "mushroom": {
+      "default": [
+        "glasses",
+        "bread",
+        "potato",
+        "vegetable",
+        "egg"
+      ],
+      "open": [
+        "canned"
+      ]
+    },
+    "leaf": {
+      "default": [
+        "cabbage",
+        "lettuce",
+        "salad",
+        "green vegetables",
+        "vegetable",
+        "fruit"
+      ]
+    },
+    "aubergine": {
+      "default": [
+        "bread",
+        "pie",
+        "pancake",
+        "pizza"
+      ]
+    },
+    "milk": {
+      "default": [
+        "bottle",
+        "cup"
+      ]
+    },
+    "jug": {
+      "default": [
+        "kettle",
+        "cup"
+      ]
+    },
+    "gloves": {
+      "default": [
+        "towel/napkin",
+        "umbrella",
+        "banana"
+      ]
+    },
+    "coffee": {
+      "default": [
+        "camera",
+        "home appliance",
+        "cup",
+        "bottle"
+      ],
+      "put": [
+        "cabinet/shelf"
+      ]
+    },
+    "sink": {
+      "default": [
+        "sink",
+        "urinal",
+        "bidet",
+        "tap"
+      ]
+    },
+    "rice": {
+      "default": [
+        "box",
+        "cup",
+        "bowl"
+      ],
+      "break": [
+        "plate"
+      ]
+    },
+    "cutlery": {
+      "default": [
+        "knife",
+        "spoon",
+        "fork",
+        "scissors"
+      ]
+    },
+    "chicken": {
+      "default": []
+    },
+    "towel": {
+      "default": [
+        "towel",
+        "towel/napkin"
+      ]
+    },
+    "garlic": {
+      "default": [
+        "cutting board"
+      ],
+      "press": [
+        "knife"
+      ],
+      "put": [
+        "basket"
+      ]
+    },
+    "pepper": {
+      "default": [
+        "pepper",
+        "bell pepper",
+        "grapefruit",
+        "vegetable",
+        "cup",
+        "bottle"
+      ],
+      "put": [
+        "refrigerator",
+        "cabinet/shelf"
+      ]
+    },
+    "rubbish": {
+      "default": [
+        "cabbage",
+        "vegetable"
+      ],
+      "water-off": [
+        "person"
+      ],
+      "throw": [
+        "pot/pan",
+        "computer monitor"
+      ]
+    },
+    "skin": {
+      "default": [
+        "obj",
+        "fruit",
+        "vegetable"
+      ]
+    },
+    "egg": {
+      "default": [
+        "egg",
+        "apple"
+      ],
+      "move": [
+        "pot/pan",
+        "bowl"
+      ]
+    },
+    "sauce": {
+      "default": [
+        "bottle",
+        "bowl"
+      ],
+      "put": [
+        "obj"
+      ]
+    },
+    "carrot": {
+      "default": [
+        "carrot",
+        "vegetable"
+      ]
+    },
+    "paper": {
+      "default": [
+        "towel/napkin",
+        "book",
+        "paper towel",
+        "toilet paper"
+      ]
+    },
+    "jar": {
+      "default": [
+        "canned",
+        "bottle"
+      ],
+      "put": [
+        "refrigerator",
+        "cabinet/shelf",
+        "cabinetry"
+      ]
+    },
+    "coffee maker": {
+      "default": [
+        "coffeemaker",
+        "tableware",
+        "pot/pan",
+        "camera"
+      ],
+      "put": [
+        "furniture"
+      ]
+    },
+    "oven": {
+      "default": [
+        "oven"
+      ]
+    },
+    "top": {
+      "default": [
+        "obj"
+      ],
+      "turn off": [
+        "faucet",
+        "sink"
+      ],
+      "rinse": [
+        "person"
+      ]
+    },
+    "kettle": {
+      "default": [
+        "kettle",
+        "coffeemaker",
+        "measuring cup",
+        "cup",
+        "bowl",
+        "pot/pan"
+      ]
+    },
+    "tomato": {
+      "default": [
+        "tomato",
+        "vegetable",
+        "fruit"
+      ]
+    },
+    "pasta": {
+      "default": [
+        "pasta"
+      ]
+    },
+    "bread": {
+      "default": [
+        "bread",
+        "bread/bun",
+        "cake",
+        "toaster"
+      ]
+    },
+    "bin": {
+      "default": [
+        "bidet",
+        "barrel/bucket",
+        "mirror",
+        "bowl"
+      ]
+    },
+    "food": {
+      "default": [
+        "frying pan",
+        "pot/pan",
+        "plate"
+      ]
+    },
+    "salt": {
+      "default": [
+        "bottle",
+        "box",
+        "book",
+        "cup."
+      ],
+      "add": [
+        "bowl",
+        "frying pan"
+      ],
+      "pour": [
+        "bowl",
+        "pot/pan"
+      ],
+      "insert": [
+        "bowl",
+        "pot/pan"
+      ]
+    },
+    "colander": {
+      "default": [
+        "ceiling fan",
+        "mechanical fan",
+        "strainer",
+        "colander",
+        "frying pan",
+        "pot/pan"
+      ],
+      "put": [
+        "sink"
+      ]
+    },
+    "tray": {
+      "default": [
+        "dessert",
+        "pizza",
+        "doughnut",
+        "laptop"
+      ],
+      "remove": [
+        "oven"
+      ],
+      "put": [
+        "oven"
+      ]
+    },
+    "potato": {
+      "default": [
+        "potato",
+        "pancake",
+        "mango",
+        "lemon",
+        "fruit",
+        "apple",
+        "banana",
+        "vegetable"
+      ],
+      "stir": [
+        "frying pan",
+        "bowl",
+        "cup"
+      ]
+    },
+    "cheese": {
+      "default": [
+        "pie",
+        "dessert"
+      ],
+      "fold": [
+        "bowl"
+      ]
+    },
+    "oil": {
+      "default": [
+        "bottle"
+      ],
+      "pour": [
+        "bowl",
+        "frying pan",
+        "pot/pan",
+        "plate"
+      ]
+    },
+    "package": {
+      "default": [
+        "box",
+        "canned"
+      ]
+    },
+    "box": {
+      "default": [
+        "book",
+        "box"
+      ]
+    },
+    "hob": {
+      "default": [
+        "oven",
+        "electronic stove and gas stove",
+        "kitchen appliance"
+      ]
+    },
+    "chopping board": {
+      "default": [
+        "cutting board",
+        "laptop",
+        "dining table"
+      ]
+    },
+    "bag": {
+      "default": [
+        "handbag"
+      ]
+    },
+    "cup": {
+      "default": [
+        "cup",
+        "coffee cup",
+        "tableware"
+      ]
+    },
+    "bottle": {
+      "default": [
+        "bottle"
+      ],
+      "fill": [
+        "tap/faucet",
+        "tap"
+      ]
+    },
+    "meat": {
+      "default": [
+        "hot dog",
+        "tart",
+        "pancake",
+        "dessert"
+      ],
+      "press": [
+        "frying pan",
+        "pot/pan"
+      ],
+      "stir": [
+        "frying pan",
+        "pot/pan"
+      ],
+      "turn": [
+        "frying pan",
+        "pot/pan"
+      ]
+    },
+    "pot": {
+      "default": [
+        "pot/pan"
+      ]
+    },
+    "dough": {
+      "default": [
+        "bread/bun",
+        "cheese"
+      ],
+      "knead": [
+        "cutting board",
+        "bowl"
+      ],
+      "roll": [
+        "cutting board"
+      ],
+      "stretch": [
+        "cutting board"
+      ]
+    },
+    "water": {
+      "default": [
+        "sink",
+        "tap",
+        "bottle",
+        "jug",
+        "cup",
+        "kitchen appliance"
+      ],
+      "search": [
+        "pot/pan"
+      ]
+    },
+    "container": {
+      "default": [
+        "frisbee",
+        "bowl"
+      ],
+      "put": [
+        "cabinet/shelf",
+        "cupboard",
+        "dining table"
+      ]
+    },
+    "cloth": {
+      "default": [
+        "towel/napkin",
+        "towel"
+      ]
+    },
+    "spatula": {
+      "default": [
+        "spatula",
+        "spoon"
+      ]
+    },
+    "onion": {
+      "default": [
+        "onion",
+        "apple",
+        "fruit",
+        "egg",
+        "pear"
+      ]
+    },
+    "fork": {
+      "default": [
+        "fork",
+        "knife",
+        "spoon"
+      ]
+    },
+    "fridge": {
+      "default": [
+        "refrigerator",
+        "object--support--pole"
+      ]
+    },
+    "bowl": {
+      "default": [
+        "bowl"
+      ]
+    },
+    "hand": {
+      "default": [
+        "person"
+      ]
+    },
+    "sponge": {
+      "default": [
+        "brush",
+        "bar soap",
+        "fruit",
+        "towel",
+        "towel/napkin",
+        "sandwich",
+        "burrito"
+      ]
+    },
+    "lid": {
+      "default": [
+        "cup",
+        "pot/pan"
+      ]
+    },
+    "glass": {
+      "default": [
+        "wine glass",
+        "cup",
+        "bottle"
+      ]
+    },
+    "pan": {
+      "default": [
+        "frying pan",
+        "wok",
+        "pot/pan"
+      ],
+      "put": [
+        "oven",
+        "dining table",
+        "cutting board"
+      ]
+    },
+    "drawer": {
+      "default": [
+        "drawer",
+        "cabinet/shelf",
+        "furniture",
+        "box",
+        "refrigerator"
+      ]
+    },
+    "cupboard": {
+      "default": [
+        "cabinet/shelf",
+        "cabinetry",
+        "furniture"
+      ]
+    },
+    "tap": {
+      "default": [
+        "tap/faucet",
+        "sink",
+        "plumbing fixture"
+      ]
+    },
+    "plate": {
+      "default": [
+        "plate",
+        "bowl",
+        "tableware"
+      ],
+      "put": [
+        "table"
+      ]
+    },
+    "knife": {
+      "default": [
+        "knife",
+        "kitchen knife",
+        "dagger",
+        "toothbrush"
+      ],
+      "put": [
+        "cutting board"
+      ]
+    },
+    "spoon": {
+      "default": [
+        "spoon",
+        "spatula"
+      ],
+      "put": [
+        "furniture"
+      ]
+    }
+  },
+  "egtea": {
+    "actions": {
+      "obj_only": [
+        "transfer",
+        "squeeze",
+        "spread",
+        "clean/wipe",
+        "put",
+        "take"
+      ],
+      "take_closest_to_hand": [
+        "put",
+        "spread",
+        "squeeze",
+        "transfer",
+        "move around"
+      ],
+      "take_all_instances": [
+        "take"
+      ],
+      "move around": [
+        "obj",
+        "spoon",
+        "fork",
+        "spatula",
+        "knife"
+      ],
+      "dry": [
+        "obj",
+        "sink",
+        "towel/napkin"
+      ],
+      "cut": [
+        "obj",
+        "cutting board",
+        "_tableware",
+        "plate",
+        "knife",
+        "bowl"
+      ],
+      "mix": [
+        "obj",
+        "bowl",
+        "pot/pan",
+        "frying pan",
+        "dessert"
+      ],
+      "pour": [
+        "obj",
+        "frying pan",
+        "pan",
+        "pot/pan",
+        "bowl",
+        "tableware",
+        "plate"
+      ],
+      "wash": [
+        "obj",
+        "sink",
+        "faucet",
+        "tap",
+        "plumbing fixture"
+      ]
+    },
+    "sink": {
+      "default": [
+        "sink",
+        "tap",
+        "plumbing fixture"
+      ]
+    },
+    "no_matches": [
+      "seasoning"
+    ],
+    "water": {
+      "default": [],
+      "mix": [
+        "pot/pan",
+        "frying pan"
+      ]
+    },
+    "washing liquid": {
+      "default": [
+        "liquid soap",
+        "bottle",
+        "personal care"
+      ]
+    },
+    "trash container": {
+      "default": [
+        "waste container",
+        "thrash bin/can"
+      ]
+    },
+    "vegetable mixture": {
+      "default": [
+        "pizza",
+        "vegetable"
+      ]
+    },
+    "tomato container": {
+      "default": [
+        "tomato",
+        "vegetable",
+        "carrot"
+      ]
+    },
+    "tomato": {
+      "default": [
+        "tomato",
+        "carrot",
+        "vegetable",
+        "fruit"
+      ],
+      "put": [
+        "cutting board"
+      ]
+    },
+    "strainer": {
+      "default": [
+        "strainer",
+        "colander",
+        "bowl",
+        "barrel/bucket"
+      ]
+    },
+    "stove": {
+      "default": [
+        "electronic stove and gas stove",
+        "kitchen appliance",
+        "oven"
+      ]
+    },
+    "sponge": {
+      "default": [
+        "towel",
+        "towel/napkin",
+        "sandwich",
+        "bar soap",
+        "burrito"
+      ]
+    },
+    "seasoning container": {
+      "default": [
+        "bottle",
+        "canned",
+        "cup",
+        "tableware"
+      ]
+    },
+    "sandwich": {
+      "default": [
+        "sandwich",
+        "vegetable",
+        "tomato",
+        "bread",
+        "hot dog",
+        "cake",
+        "bagel"
+      ],
+      "put": [
+        "plate",
+        "bowl"
+      ]
+    },
+    "salad": {
+      "default": [
+        "cabbage",
+        "pasta",
+        "vegetable",
+        "plate",
+        "bowl"
+      ]
+    },
+    "pot": {
+      "default": [
+        "pot/pan",
+        "frying pan",
+        "wok",
+        "bowl",
+        "tableware"
+      ],
+      "put": [
+        "electronic stove and gas stove",
+        "sink",
+        "home appliance"
+      ],
+      "move around": [
+        "electronic stove and gas stove",
+        "home appliance"
+      ]
+    },
+    "plate": {
+      "default": [
+        "plate",
+        "tableware",
+        "bowl",
+        "object--manhole"
+      ],
+      "put": [
+        "dining table",
+        "table",
+        "countertop",
+        "cabinet/shelf"
+      ]
+    },
+    "patty": {
+      "default": [
+        "steak",
+        "bread",
+        "sandwich",
+        "dessert"
+      ],
+      "move around": [
+        "frying pan",
+        "pot/pan",
+        "wok"
+      ],
+      "put": [
+        "frying pan",
+        "pot/pan"
+      ],
+      "compress": [
+        "frying pan",
+        "pot/pan"
+      ]
+    },
+    "pasta container": {
+      "default": [
+        "box",
+        "bread"
+      ]
+    },
+    "pasta": {
+      "default": [
+        "pasta"
+      ],
+      "move around": [
+        "pot/pan",
+        "frying pan",
+        "bowl"
+      ],
+      "dry": [
+        "strainer",
+        "colander",
+        "bowl"
+      ]
+    },
+    "paper towel": {
+      "default": [
+        "paper towel",
+        "toilet paper",
+        "towel/napkin"
+      ]
+    },
+    "pan": {
+      "default": [
+        "frying pan",
+        "wok",
+        "pan/pot"
+      ],
+      "put": [
+        "sink"
+      ]
+    },
+    "onion": {
+      "default": [
+        "onion",
+        "apple",
+        "egg",
+        "potato",
+        "fruit"
+      ],
+      "put": [
+        "bowl",
+        "tableware",
+        "cutting board"
+      ]
+    },
+    "olive container": {
+      "default": [
+        "canned",
+        "bottle",
+        "tableware"
+      ]
+    },
+    "olive": {
+      "default": [
+        "nuts",
+        "dates"
+      ],
+      "put": [
+        "bowl",
+        "tableware"
+      ]
+    },
+    "oil container": {
+      "default": [
+        "bottle"
+      ],
+      "put": [
+        "Table",
+        "dining table"
+      ]
+    },
+    "oil": {
+      "default": [],
+      "move around": [
+        "frying pan",
+        "wok"
+      ]
+    },
+    "mixture": {
+      "default": [
+        "vegetable",
+        "potato"
+      ],
+      "move around": [
+        "bowl",
+        "tableware"
+      ]
+    },
+    "microwave": {
+      "default": [
+        "microwave",
+        "microwave oven",
+        "oven"
+      ]
+    },
+    "lettuce": {
+      "default": [
+        "lettuce",
+        "vegetable",
+        "cabbage",
+        "salad"
+      ],
+      "put": [
+        "bowl",
+        "tableware",
+        "plate"
+      ]
+    },
+    "hand": {
+      "default": [
+        "person"
+      ]
+    },
+    "grocery bag": {
+      "default": [
+        "handbag",
+        "bread"
+      ],
+      "take": [
+        "refrigerator"
+      ]
+    },
+    "fridge drawer": {
+      "default": [
+        "oven",
+        "refrigerator"
+      ]
+    },
+    "drawer": {
+      "default": [
+        "drawer",
+        "cabinet/shelf",
+        "furniture"
+      ]
+    },
+    "fridge": {
+      "default": [
+        "refrigerator",
+        "object--support--pole",
+        "kitchen appliance",
+        "home appliance",
+        "chest of drawers"
+      ]
+    },
+    "faucet": {
+      "default": [
+        "tap",
+        "plumbing fixture",
+        "sink"
+      ]
+    },
+    "egg": {
+      "default": [
+        "egg",
+        "dessert"
+      ],
+      "crack": [
+        "plate",
+        "tableware",
+        "bowl"
+      ],
+      "move around": [
+        "pot/pan",
+        "frying pan"
+      ],
+      "put": [
+        "pot/pan",
+        "frying pan",
+        "tableware",
+        "bowl"
+      ]
+    },
+    "eating utensil": {
+      "default": [
+        "fork",
+        "spoon",
+        "knife",
+        "kitchen knife"
+      ],
+      "put": [
+        "cupboard",
+        "cabinet/shelf",
+        "dining table",
+        "table",
+        "countertop",
+        "cabinetry",
+        "sink"
+      ]
+    },
+    "dishwasher": {
+      "default": [
+        "home appliance",
+        "washing machine",
+        "refrigerator",
+        "oven"
+      ]
+    },
+    "cutting board": {
+      "default": [
+        "cutting board"
+      ],
+      "put": [
+        "table",
+        "sink",
+        "dining table",
+        "countertop"
+      ]
+    },
+    "cup": {
+      "default": [
+        "cup",
+        "coffee cup",
+        "tableware",
+        "drink",
+        "measuring cup"
+      ],
+      "put": [
+        "cupboard",
+        "cabinet/shelf",
+        "dining table",
+        "table",
+        "countertop",
+        "cabinetry"
+      ]
+    },
+    "cucumber": {
+      "default": [
+        "cucumber",
+        "zucchini",
+        "vegetable",
+        "bell pepper",
+        "apple"
+      ],
+      "take": [
+        "refrigerator"
+      ],
+      "put": [
+        "bowl",
+        "tableware",
+        "plate"
+      ]
+    },
+    "counter": {
+      "default": [
+        "countertop",
+        "dining table",
+        "table",
+        "cutting board"
+      ]
+    },
+    "cooking utensil": {
+      "default": [
+        "spatula",
+        "spoon",
+        "fork"
+      ],
+      "move around": [
+        "frying pan",
+        "bowl",
+        "pot/pan"
+      ]
+    },
+    "condiment container": {
+      "default": [
+        "canned",
+        "bottle"
+      ],
+      "put": [
+        "refrigerator",
+        "cabinet/shelf"
+      ],
+      "move around": [
+        "refrigerator",
+        "cabinet/shelf"
+      ],
+      "take": [
+        "refrigerator",
+        "cabinet/shelf"
+      ]
+    },
+    "condiment": {
+      "default": [
+        "bottle"
+      ]
+    },
+    "cheese container": {
+      "default": [
+        "canned",
+        "book"
+      ],
+      "take": [
+        "bowl",
+        "refrigerator"
+      ],
+      "put": [
+        "refrigerator"
+      ]
+    },
+    "cheese": {
+      "default": [],
+      "put": [
+        "pot/pan",
+        "sandwich",
+        "tableware",
+        "bowl",
+        "plate"
+      ],
+      "take": [
+        "refrigerator"
+      ]
+    },
+    "carrot": {
+      "default": [
+        "carrot",
+        "vegetable"
+      ],
+      "put": [
+        "cutting board",
+        "plate",
+        "bowl"
+      ]
+    },
+    "cabinet": {
+      "default": [
+        "cabinet/shelf",
+        "furniture",
+        "cabinetry",
+        "refrigerator",
+        "mirror"
+      ]
+    },
+    "bread": {
+      "default": [
+        "bread",
+        "sandwich",
+        "dessert",
+        "hot dog",
+        "doughnut",
+        "bagel",
+        "carrot"
+      ],
+      "put": [
+        "plate",
+        "tableware"
+      ]
+    },
+    "bread container": {
+      "default": [
+        "bread",
+        "bagel",
+        "hot dog"
+      ],
+      "take": [
+        "refrigerator",
+        "home appliance",
+        "kitchen appliance"
+      ],
+      "put": [
+        "refrigerator"
+      ]
+    },
+    "bowl": {
+      "default": [
+        "bowl",
+        "plate",
+        "tableware",
+        "pot/pan"
+      ]
+    },
+    "bacon": {
+      "default": [
+        "sausage",
+        "hot dog",
+        "bread",
+        "seafood"
+      ],
+      "move around": [
+        "frying pan",
+        "wok",
+        "pot/pan",
+        "kitchen appliance"
+      ],
+      "put": [
+        "frying pan",
+        "pot/pan",
+        "wok"
+      ]
+    },
+    "bell pepper": {
+      "default": [
+        "pepper",
+        "bell pepper",
+        "vegetable",
+        "apple",
+        "fruit",
+        "banana"
+      ],
+      "take": [
+        "bowl",
+        "plate",
+        "refrigerator",
+        "cutting board"
+      ],
+      "put": [
+        "refrigerator",
+        "bowl",
+        "plate",
+        "tableware",
+        "cutting board"
+      ]
+    },
+    "recipe": {
+      "default": [
+        "book",
+        "envelope",
+        "object--banner"
+      ]
+    }
+  }
+}

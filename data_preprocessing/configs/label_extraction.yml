@@ -1,0 +1,16 @@
+model_cfg: "${CODE}/data_preprocessing/configs/Eval_Unified_learned_OCIM_RS200_6x+2x.yaml"
+dataset: "epic_v"
+actors: 
+  - P01
+  - P02
+  - P03
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  - P09
+
+frame_stride: 1
+bs: 24
+num_workers: 6

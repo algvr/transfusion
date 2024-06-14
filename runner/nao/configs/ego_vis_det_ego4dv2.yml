@@ -1,0 +1,48 @@
+type: res50
+trainable_layers: 2
+train_ep: -1
+box_1_dropout: 0.
+box_2_dropout: 0.
+representation_size: 1280
+load_path: Null
+load_only_backbone: False
+load_fpn_rpn: True
+adapt_to_detectron: True
+additional_postprocessing: True
+batch_norm:
+  use: False
+  momentum: 0.1
+
+fpn_return_layers:
+  - 1
+  - 2
+  - 3
+  - 4
+
+verb_classifier:
+  type: False
+  representation_size: 512
+  w_bn: True
+  w_detach: True
+  ttc_dropout: 0.25
+  sep_roi: 196
+  w_relu: True
+  cnn_proj: res_block
+  init_v_biases: False
+
+rcnn_kwargs:
+  box_score_thresh: 0.01
+  rpn_score_thresh: 0.01
+  rpn_batch_size_per_image: 64
+  box_batch_size_per_image: 128
+
+ttc_hand_head:
+  use: False
+  ff_dim: 1024
+  feat_dim: 1024
+  emb_steps_hand: 100
+  emb_steps_object: 100
+  num_heads: 4
+  num_layers: 4
+  dropout: 0.1
+  max_ttc_boxes_per_image: 5
