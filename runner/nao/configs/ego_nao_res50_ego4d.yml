@@ -29,7 +29,7 @@ aug:
   contrast: 0.1
   saturation: 0.
   hue: 0.05
-  flip: False
+  flip: True
  
 dataset: 
   name: ego4djpg
