@@ -32,7 +32,7 @@ We provide convenience scripts `train_ego4d.sh` (for Ego4Dv1) and `train_ego4dv2
 
 In order to train using a custom configuration, set the `DATA` environment variable to the correct data storage path. `CODE` should be set to the repository root. `RUNS` sets where the experiment checkpoints and artifacts are to be saved.
 
-The training is started using `python runner/run_experiment --config <chosen main config file>.yml`. The main configuration files are `runner/nao/configs/ego_nao_res50_ego4d.yml` (Ego4Dv1) and `runner/nao/configs/ego_nao_res50_ego4dv2.yml` (Ego4Dv2).
+The training is started using `python runner/run_experiment.py --config <chosen main config file>.yml`. The main configuration files are `runner/nao/configs/ego_nao_res50_ego4d.yml` (Ego4Dv1) and `runner/nao/configs/ego_nao_res50_ego4dv2.yml` (Ego4Dv2).
 
 This step results in a trained model for bounding box and noun-verb classification. The model weights are saved both in the wandb runs (check your project) as well as offline (in the `RUNS` directory). Make sure to clean those locations and the `.wandb_cache` directory periodically when running multiple experiments, as they tend to get large. 
 
